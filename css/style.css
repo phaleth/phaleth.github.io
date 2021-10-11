@@ -1,102 +1,104 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-  font-family: 'Open Sans';
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.card-holder {
-  height: 500px;
-  display: flex;
-  /* main axis */
-  justify-content: space-around;
-  
-  /* cross axis */
-  align-items: center;
-  
-  flex-direction: row;
-  
-  flex-wrap: wrap;
-  
-  align-content: space-between;
+.content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.card {
-/*   width: 180px; */
-  background-color: #3cb878;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  color: white;
-  box-shadow: 0px 0px 3px 2px gray;
-/*   flex-grow: 1; */
+header {
+  background: url('../images/first-website-header.png') center center;
+  background-repeat: no-repeat;
+  background-size: 1200px auto;
+  width: 100%;
+  height: 350px;
+  margin-bottom: auto;
 }
 
-.newsletter-form {
-  color: grey;
+header section.title {
+  max-width: 800px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Abril Fatface', cursive;
+  color: #222;
+  margin: 0 10px;
+  position: absolute;
+  bottom: 30px;
+}
+
+section.title h1 span.name {
+  display: block;
+  font-size: 150%;
+}
+
+article {
+  margin: 0 10px;
+}
+
+article h1 {
+  text-transform: uppercase;
+  padding-top: 25px;
+  font-size: 150%;
+}
+
+article h2 {
+  padding-top: 15px;
+}
+
+article h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  padding-top: 0;
+}
+
+blockquote {
+  font-family: 'Abril Fatface', cursive;
+  color: #FFF;
+  background-color: #222;
+  font-size: x-large;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 30px;
+  position: relative;
+}
+
+blockquote::before {
+  font-size: 250%;
+  content: '”';
+  transform: rotate(180deg);
+  position: absolute;
+  top: -55px;
+  left: 0;
+}
+
+article p:first-of-type {
   margin-top: 40px;
 }
 
-.newsletter-form h3 {
-  margin-top: 0;
+article p {
+  color: #222;
 }
 
-#terms {
-  position: relative;
-  top: 2px;
-  left: 0px;
+ul {
+  margin-bottom: 30px;
 }
 
-.newsletter-form {
-  border: solid thin #cfcfcf;
-  padding: 10px;
-  border-radius: 3px;
-  position: relative;
-}
-
-
-.closing-x {
-  position: absolute;
-  top: 0px;
-  right: 5px;
-}
-
-.newsletter-form #email {
-  display: block;
-  width: 100%;
-  border: solid thin #cfcfcf;
-  height: 30px;
-  padding-left: 3px;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-.newsletter-form button {
-  display: block;
-  width: 100%;
-  background-color: #3cb878;
-  border: 0;
-  color: white;
-  height: 30px;
-  margin-top: 5px;
-}
-
-.closing-x button {
-  background: none;
-  color: black;
-  cursor: pointer;
-}
-
-#question-circle {
-  height: 100px;
-  width: 100px;
-  background-color: #3cb878;
-  border-radius: 50%;
-  color: white;
-  font-size: 70px;
-  text-align: center;
-  
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+hr {
+  border: none;
+  height: 4px;
+  background-color: #222;
 }
