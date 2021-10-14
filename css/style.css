@@ -1,104 +1,90 @@
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  background-color: #FFF;
-  margin: 0;
-  padding: 0;
+  font-family: 'Sen', sans-serif;
+  background-color: turquoise;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: floralwhite;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px;
 }
 
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-header {
-  background: url('../images/first-website-header.png') center center;
-  background-repeat: no-repeat;
-  background-size: 1200px auto;
-  width: 100%;
-  height: 350px;
-  margin-bottom: auto;
-}
-
-header section.title {
-  max-width: 800px;
-  height: 350px;
-  margin: 0 auto;
-  position: relative;
-}
-
-header h1 {
-  font-family: 'Abril Fatface', cursive;
-  color: #222;
-  margin: 0 10px;
-  position: absolute;
-  bottom: 30px;
-}
-
-section.title h1 span.name {
-  display: block;
-  font-size: 150%;
-}
-
-article {
-  margin: 0 10px;
-}
-
-article h1 {
+h1 {
   text-transform: uppercase;
-  padding-top: 25px;
+  font-weight: lighter;
+  font-size: 300%;
+  color: grey;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.new-todo {
+  display: flex;
+}
+
+input {
+  width: 100%;
+  background-color: #FFF;
+  border-top: 2px solid grey;
+  border-right: none;
+  border-bottom: 2px solid grey;
+  border-left: 2px solid grey;
+  padding: 10px;
   font-size: 150%;
 }
 
-article h2 {
-  padding-top: 15px;
+button {
+  min-width: 70px;
+  background-color: violet;
+  border-top: 2px solid grey;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-left: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 150%;
 }
 
-article h3 {
-  font-family: 'Merriweather', serif;
-  font-size: 15px;
-  padding-top: 0;
+button:hover {
+  background-color: yellowgreen;
 }
 
-blockquote {
-  font-family: 'Abril Fatface', cursive;
-  color: #FFF;
-  background-color: #222;
-  font-size: x-large;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 30px;
-  position: relative;
-}
-
-blockquote::before {
-  font-size: 250%;
-  content: '”';
-  transform: rotate(180deg);
-  position: absolute;
-  top: -55px;
-  left: 0;
-}
-
-article p:first-of-type {
-  margin-top: 40px;
-}
-
-article p {
-  color: #222;
+button:active {
+  background-color: darkviolet;
 }
 
 ul {
-  margin-bottom: 30px;
+  padding: 0;
+  margin-top: 20px;
+  list-style-type: none;
+  width: 100%;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }
 
-hr {
-  border: none;
-  height: 3px;
-  background-color: #222;
+li {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+li span {
+  width: 100%;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+li img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
 }
