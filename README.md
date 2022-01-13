@@ -1,1 +1,1 @@
-Repo has been created by following [StayAtHome Coding Camp](https://myfirstapp.greenfox.academy/en).
+Webpage created by following [GFA's](https://lms.greenfox.academy) 0th homework instructions for the first website.
