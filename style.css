@@ -24,6 +24,10 @@ p {
     font-family: consolas, courier;
 }
 
+main {
+    color: #226441;
+}
+
 nav {
     display: flex;
     align-items: center; /* align vertical */
